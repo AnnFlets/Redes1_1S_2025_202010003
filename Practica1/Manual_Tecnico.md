@@ -2,9 +2,19 @@
 #### Laboratorio de Redes de Computadoras 1 - Sección A
 ---------
 
+La práctica 1 del laboratorio de Redes de Computadoras 1 consiste en diseñar y configurar una topología de red para la empresa "Sigma Studio", un estudio de arquitectura y diseño gráfico que necesita optimizar su infraestructura tecnológica y mejorar la comunicación interna. Para ello, se deberá implementar una red local (LAN), teniendo como restricción el uso de dos switches de capa 2 (modelo 2960) y 30 computadoras, de las cuales 20 son de escritorio y 10 laptops. Estos equipos de cómputo deberán distribuirse en cinco departamentos:
+
+* Arquitectura y Urbanismo (10 computadoras)
+* Diseño Gráfico y Publicidad (6 computadoras)
+* Renderizado y Modelado 3D (6 computadoras)
+* Recepción y Administración (4 computadoras)
+* Alta Dirección (4 computadoras)
+
+Estas computadoras deberán configurarse, proporcionándoles una dirección IP única; igualmente se deberán realizar pruebas de conectividad entre equipos de un mismo departamento y entre áreas diferentes; y llevar a cabo la simulación de capturas de paquetes ARP y ICMP.
+
 ## Tabla de dispositivos e IP
 
-En la siguiente tabla se presentan los distintos equipos presentes en la empresa, especificando su ID, tipo, la IP que utilizan y el departamento en el cuál se ubican.
+En la siguiente tabla se presentan los distintos equipos presentes en la empresa, especificando su ID, tipo, la IP que utilizan y el departamento en el cual se ubican.
 
 | ID EQUIPO | TIPO | IP | DEPARTAMENTO |
 | :------: | :----: | :----------: | :-------------------------- |
@@ -43,14 +53,14 @@ En la siguiente tabla se presentan los distintos equipos presentes en la empresa
 
 Para la configuración de los dos switches, se utilizaron los siguientes comandos:
 
-* enable
-* configure terminal
-* hostname NuevoNombreSwitch
-* enable secret NuevoContraseñaSwitch
-* write memory
-* exit
+* __enable:__ ir al modo privilegiado.
+* __configure terminal:__ ir al modo de configuración global.
+* __hostname NuevoNombreSwitch:__ configurar el nombre de host del switch, asignándole el valor en 'NuevoNombreSwitch'.
+* __enable secret NuevaContraseñaSwitch:__ configurar la contraseña de acceso al modo privilegiado, asignándole el valor en 'NuevaContraseñaSwitch'.
+* __write memory:__ guardar la configuración actual en memoria.
+* __exit:__ salir del modo de configuración.
 
-## Capturas de pantalla de la configuración de los equipos
+## Configuración de equipos
 
 En las siguientes imágenes se muestran algunos ejemplos de la configuración realizada a cada uno de los equipos de cómputo de los diversos departamentos de la empresa, específicamente, la configuración de la dirección IP. 
 
@@ -69,7 +79,7 @@ Equipo de cómputo del departamento de "Arquitectura y Urbanismo":
 Equipo de cómputo del departamento de "Diseño Gráfico y Publicidad":
 ![Configuración equipo Diseño Gráfico y Publicidad](img/ConfiguracionPC5.png)
 
-## Capturas de pantalla de pings entre hosts
+## Ping entre hosts
 
 En las siguientes imágenes se muestran algunos ejemplos de pings realizados entre hosts de distintas áreas, esto con el fin de comprobar la existencia de comunicación entre los equipos.
 
@@ -88,10 +98,14 @@ Ping entre equipo de "Arquitectura y Urbanismo" y de "Diseño Gráfico y Publici
 Ping entre equipo de "Diseño Gráfico y Publicidad" y de "Alta Dirección":
 ![Ping entre equipo Diseño Gráfico y Publicidad y Alta Dirección](img/Ping5.png)
 
-## Captura de pantalla de la demostración de la captura de un paquete ARP
+## Demostración de captura de un paquete ARP
+
+En la imagen se muestra la captura de un paquete ARP utilizando el modo simulación de Packet Tracer:
 
 ![Captura de un paquete ARP](img/ARP1.png)
 
-## Captura de pantalla de la demostración de la captura de un paquete ICMP
+## Demostración de captura de un paquete ICMP
+
+En la imagen se muestra la captura de un paquete ICMP haciendo uso del modo simulación de Packet Tracer:
 
 ![Captura de un paquete ICMP](img/ICMP1.png)
