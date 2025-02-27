@@ -156,21 +156,27 @@ exit
 ###### MISMA VLAN
 
 Ping entre equipos de vlan "ADMON" y "ADMON":
+
 ![Ping entre equipos de vlan "ADMON" y "ADMON"](img/admon_admon.png)
 
 Ping entre equipos de vlan "MERCA" y "MERCA":
+
 ![Ping entre equipos de vlan "MERCA" y "MERCA"](img/merca_merca.png)
 
 Ping entre equipos de vlan "VENTAS" y "VENTAS":
+
 ![Ping entre equipos de vlan "VENTAS" y "VENTAS"](img/ventas_ventas.png)
 
 ###### DISTINTA VLAN
 
 Ping entre equipos de vlan "ADMON" y "MERCA":
+
 ![Ping entre equipos de vlan "ADMON" y "MERCA"](img/admon_merca.png)
 
 Ping entre equipos de vlan "MERCA" y "VENTAS":
+
 ![Ping entre equipos de vlan "MERCA" y "VENTAS"](img/merca_ventas.png)
 
 Ping entre equipos de vlan "VENTAS" y "ADMON":
+
 ![Ping entre equipos de vlan "VENTAS" y "ADMON"](img/ventas_admon.png)
